@@ -18,6 +18,7 @@
 
 /// Mixin helper to stylized `main` div in large size
 @mixin main-lg {
+    padding-top: map-get($header, height);
     display:     block;
     width:       100%;
 }
