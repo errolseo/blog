@@ -2,24 +2,24 @@
 // --------------------------------------------
 
 // Font families
-$open-sans:            'Open Sans';
-$open-sans-sans-serif: 'Open Sans', sans-serif;
-$merriweather-serif:   'Merriweather', serif;
-$menlo:                 Menlo, Consolas, monospace;
-$gothic:               'NanumGothic';
+
+$menlo:                     Menlo, Consolas, monospace;
+$merriweather-serif:        'Merriweather', serif;
+$noto-sans-kr-sans-serif:   'Noto Sans KR', sans-serif;
+$open-sans-sans-serif:      'Open Sans', sans-serif;
 
 $font-family-base: $open-sans-sans-serif;
 
 $font-families: (
    // base
-   'headings':          $gothic,
+   'headings':          $noto-sans-kr-sans-serif,
    // components
    'code':              $menlo,
-   'caption':           $merriweather-serif,
-   'image-gallery':     $open-sans,
-   'post-header-cover': $merriweather-serif,
+   'caption':           $noto-sans-kr-sans-serif,
+   'image-gallery':     $noto-sans-kr-sans-serif,
+   'post-header-cover': $noto-sans-kr-sans-serif,
    'post-meta':         $open-sans-sans-serif,
-   'post-content':      $gothic,
+   'post-content':      $noto-sans-kr-sans-serif,
    'post-excerpt-link': $open-sans-sans-serif,
    'highlight':         $menlo,
    // layout
