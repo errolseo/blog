@@ -295,14 +295,14 @@ canonifyurls = true
   # --------------
   [params.comment]
     [params.comment.disqus]
-      enable = true
-      shortname = "hugo-tranquilpeak-theme"
-    [params.comment.gitalk]
       enable = false
-      # clientId =
-      # clientSecret =
-      # owner =
-      # repo =
+      shortname = "Errol Seo"
+    [params.comment.gitalk]
+      enable = true
+      clientId = "2a15074f09798841c951"
+      clientSecret = "91ed39395042b7152e350c2965cd03140d1d33ed"
+      owner = "errolseo"
+      repo = "blog-comments"
       # See all options: https://github.com/gitalk/gitalk#options
       [params.comment.gitalk.options]
         language = "en"
