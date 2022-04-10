@@ -1,9 +1,34 @@
 {{ if .IsPage }}
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
   <script src="https://utteranc.es/client.js"
     repo="errolseo/blog-comments"
     issue-term="title"
     theme="github-light"
     crossorigin="anonymous"
     async>
+  </script>
+  <script type="text/javascript">
+    var disqus_config = function() {
+      this.page.url = '{{ .Permalink }}';
+      {{ if .Params.disqusIdentifier }}
+        this.page.identifier = '{{ .Params.disqusIdentifier }}';
+      {{ else }}
+        this.page.identifier = '{{ .RelPermalink }}'
+      {{ end }}
+    };
+    (function() {
+      // Don't ever inject Disqus on localhost--it creates unwanted
+      // discussions from 'localhost:1313' on your Disqus account...
+      if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+        document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+        return;
+      }
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = '{{ .Site.DisqusShortname }}';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
   </script>
 {{ end }}
