@@ -290,14 +290,6 @@ canonifyurls = true
   # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307
   #  fbAppId =
 
-  # --------------
-  # Comment system
-  # --------------
-  [params.comment]
-    [params.comment.disqus]
-      enable = true
-      shortname = "Errol Seo"
-
   # --------------------
   # Header configuration
   # --------------------

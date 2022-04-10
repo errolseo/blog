@@ -62,19 +62,11 @@
       </li>
     {{ end }}
   {{ end }}
-  {{ if and (and (.Site.Params.comment.disqus.enable) (not (.Site.Config.Privacy.Disqus.Disable))) .Site.DisqusShortname }}
-    <li class="post-action">
-      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="{{ i18n "post.comment" }}">
-        <i class="far fa-comment"></i>
-      </a>
-    </li>
-  {{ else if .Site.Params.comment.gitalk.enable }}
-    <li class="post-action">
-      <a class="post-action-btn btn btn--default" href="#gitalk" aria-label="{{ i18n "post.comment" }}">
-        <i class="fa fa-comment"></i>
-      </a>
-    </li>
-  {{ end }}
+  <li class="post-action">
+    <a class="post-action-btn btn btn--default" href="#post-footer" aria-label="{{ i18n "post.comment" }}">
+      <i class="far fa-comment"></i>
+    </a>
+  </li>
   <li class="post-action">
     {{ if findRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" .Content }}
       <a class="post-action-btn btn btn--default" href="#table-of-contents" aria-label="{{ i18n "post.toc" }}">
