@@ -100,7 +100,7 @@
      * @returns {Number} The number of categories found
      */
     countCategories: function(category) {
-      return $(this.posts + '[data-' + this.dataCategory + '*=\'' + category + '\']').length;
+      return $(this.posts + '[data-' + this.dataCategory + '*=\'' + category + '\' i]').length;
     },
 
     /**
@@ -111,8 +111,8 @@
     showPosts: function(category) {
       var self = this;
       var parents;
-      var categories = self.categories + '[data-' + self.dataCategory + '*=\'' + category + '\']';
-      var posts = self.posts + '[data-' + self.dataCategory + '*=\'' + category + '\']';
+      var categories = self.categories + '[data-' + self.dataCategory + '*=\'' + category + '\' i]';
+      var posts = self.posts + '[data-' + self.dataCategory + '*=\'' + category + '\' i]';
 
       if (self.countCategories(category) > 0) {
         // Check if selected categories have parents
