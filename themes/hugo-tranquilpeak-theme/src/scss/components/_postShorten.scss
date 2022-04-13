@@ -105,6 +105,7 @@
                 height:     $post-thumbnail-image-width;
                 object-fit: cover;
                 overflow:   hidden;
+                object-position:right;
             }
         }
         .postShorten-wrap {

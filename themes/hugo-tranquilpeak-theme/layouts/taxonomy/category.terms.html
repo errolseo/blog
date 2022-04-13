@@ -23,7 +23,7 @@
           {{ $.Scratch.Set $name $node }}
           {{ $.Scratch.SetInMap $level $path $node }}
         {{ end }}
-        {{ $.Scratch.SetInMap (printf "%s" (delimit (first (add $index 1) $categories) "/")) $page.File.UniqueID $page }}
+        {{ $.Scratch.SetInMap (printf "%s" (delimit (first (add $index 1) $categories) "/")) $page.File.TranslationBaseName $page }}
         {{ $.Scratch.Set "parent" $path }}
       {{ end }}
       {{ $.Scratch.Set "parent" nil }}
@@ -50,7 +50,7 @@
               data-message-zero="{{ i18n "global.categories_found.zero" }}"
               data-message-one="{{ i18n "global.categories_found.one" }}"
               data-message-other="{{ i18n "global.categories_found.other" }}"></h5>
-          <section class="boxes">
+          <section class="boxes" style="display: none;">
             {{ if $.Site.Params.hierarchicalCategories }}
               {{ range $.Scratch.GetSortedMapValues "categories-level-0" }}
                 {{ $path := .path }}
