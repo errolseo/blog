@@ -89,7 +89,7 @@ canonifyurls = true
   # ------------------
   # Syntax highlighter, possible choice between: "highlight.js" and "prism.js"
   # You can comment it to disable syntax highlighting
-  syntaxHighlighter = "highlight.js"
+  # syntaxHighlighter = "highlight.js"
 
   # -----------
   # Date format
@@ -97,7 +97,7 @@ canonifyurls = true
   # Customize date format use to render blog post date, categories and other
   # You must use date format used by Go Time package https://golang.org/pkg/time/
   # Months (not work with short month like "jan", "feb", etc) are translated if translation exists on i18n folders
-  # Default format is: January 2, 2006
+  # Default format is: January 2, 2006n
   #  dateFormat = "2 January 2006"
 
   # ---------------------------
