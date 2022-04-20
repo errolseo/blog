@@ -24,7 +24,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
-    {{ partial "head_start.html" . }}
     {{ partial "schema.html" . }}
     {{ partial "meta.html" . }}
     <title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</title>
@@ -41,7 +40,7 @@
     <link rel="canonical" href="{{ .Permalink }}">
 
     <!--EXTERNAL STYLES-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     {{ if .Params.katex }}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
@@ -50,18 +49,10 @@
     <!--STYLES-->
     <link rel="stylesheet" href="{{ "css/style-ddg3ifxyvxbho75aia2aghxmldrua8yplsbclrmgylrfs2qtsmwya2g4or7.min.css" | absURL }}" />
     <!--STYLES END-->
-    {{ range .Site.Params.customCSS }}
-      {{ if isset . "href" }}
-        <link {{ if not (isset . "rel") }}rel="stylesheet" {{ end }}{{ range $key, $value := . }} {{ if eq $key "href" }}{{ (printf "%s=\"%s\"" $key ($value | absURL)) | safeHTMLAttr }}{{ else }}{{ (printf "%s=\"%s\"" $key (string $value)) | safeHTMLAttr }}{{ end }}{{ end }}>
-      {{ else }}
-        <link rel="stylesheet" href="{{ . | absURL }}">
-      {{ end }}
-    {{ end }}
 
     {{ if or .Params.googleAnalytics.async .Params.ga.async }}
       {{ template "_internal/google_analytics_async.html" . }}
     {{ else }}
       {{ template "_internal/google_analytics.html" . }}
     {{ end }}
-    {{ partial "head_end.html" . }}
   </head>

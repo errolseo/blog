@@ -29,7 +29,10 @@ canonifyurls = true
     endLevel = 3
     ordered = false
     startLevel = 1
+  [markup.highlight]
+    style = 'monokailight'
 
+  
 # ------
 # Author
 # ------
@@ -57,12 +60,18 @@ canonifyurls = true
   url = "/categories"
 [[menu.main]]
   weight = 3
+  identifier = "tags"
+  name = "Tags"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-tags\" aria-hidden=\"true\"></i>"
+  url = "/tags"
+[[menu.main]]
+  weight = 4
   identifier = "archives"
   name = "Archives"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-folder-open\" aria-hidden=\"true\"></i>"
   url = "/archives"
 [[menu.main]]
-  weight = 4
+  weight = 5
   identifier = "about"
   name = "About"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-user\" aria-hidden=\"true\"></i>"
@@ -83,13 +92,6 @@ canonifyurls = true
   # Description
   # -----------
   description = "Errol's AI blog"
-
-  # ------------------
-  # Syntax highlighter
-  # ------------------
-  # Syntax highlighter, possible choice between: "highlight.js" and "prism.js"
-  # You can comment it to disable syntax highlighting
-  # syntaxHighlighter = "highlight.js"
 
   # -----------
   # Date format
@@ -133,106 +135,19 @@ canonifyurls = true
   # Otherwise put your image, for example `cover.jpg` in folder `static/images/`,
   # and use relative url : `images/cover.jpg`
   coverImage = "images/cover.jpg"
+  cover = true
 
   # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
   imageGallery = true
 
   # Display thumbnail image of each post on index pages (false: disabled, true: enabled)
   thumbnailImage = true
-  # Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`)
-  # Set this value to `right` if you have old posts to keep the old style on them
-  # and define `thumbnailImagePosition` on a post to overwrite this setting
-  thumbnailImagePosition = "bottom"
-  # Automatically select the cover image or the first photo from the gallery of a post if there is no thumbnail image as the thumbnail image
-  # Set this value to `true` if you have old posts that use the cover image or the first photo as the thumbnail image
-  # and set `autoThumbnailImage` to `false` on a post to overwrite this setting
+  thumbnailImagePosition = "right"
   autoThumbnailImage = true
 
   # Your favicon path, default is "/favicon.png"
   #  favicon = "/favicon.png"
-
-  # ------------------
-  # External resources
-  # ------------------
-  # Custom CSS. Put here your custom CSS files. They are loaded after the theme CSS;
-  # they have to be referred from static root. Example
-  #  [[params.customCSS]]
-  #    href = "css/mystyle.css"
-
-  # Custom JS. Put here your custom JS files. They are loaded after the theme JS;
-  # they have to be referred from static root. Example
-  #  [[params.customJS]]
-  #     src = "js/myscript.js"
-  [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"
-    integrity = "sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw=="
-    crossorigin = "anonymous"
-    async = true
-    defer = true
-
-  [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"
-    integrity = "sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow=="
-    crossorigin = "anonymous"
-    async = true
-    defer = true
-
-  [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"
-    integrity = "sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ=="
-    crossorigin = "anonymous"
-    async = true
-    defer = true
-
-  [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"
-    integrity = "sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA=="
-    crossorigin = "anonymous"
-    async = true
-    defer = true
-
-  [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"
-    integrity = "sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg=="
-    crossorigin = "anonymous"
-    async = true
-    defer = true
-
-  [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"
-    integrity = "sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog=="
-    crossorigin = "anonymous"
-    async = true
-    defer = true
-
-  [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"
-    integrity = "sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA=="
-    crossorigin = "anonymous"
-    async = true
-    defer = true
-
-  [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"
-    integrity = "sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w=="
-    crossorigin = "anonymous"
-    async = true
-    defer = true
-
-  [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"
-    integrity = "sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg=="
-    crossorigin = "anonymous"
-    async = true
-    defer = true
-
-  [[params.customJS]]
-    src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"
-    integrity = "sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw=="
-    crossorigin = "anonymous"
-    async = true
-    defer = true
-
+  
   # ---------------
   # Sharing options
   # ---------------
@@ -249,31 +164,10 @@ canonifyurls = true
     icon = "fab fa-twitter"
     url = "https://twitter.com/intent/tweet?text=%s"
 
-
-#  [[params.sharingOptions]]
-#    name = "Whatsapp"
-#    icon = "fab fa-whatsapp"
-#    url = "https://wa.me/?text=%s"
-
   [[params.sharingOptions]]
     name = "Linkedin"
     icon = "fab fa-linkedin"
     url = "https://www.linkedin.com/sharing/share-offsite/?url=%s"
-
-#  [[params.sharingOptions]]
-#    name = "Reddit"
-#    icon = "fab fa-reddit"
-#    url = "https://www.reddit.com/submit?url=%s"
-#
-#  [[params.sharingOptions]]
-#    name = "Pocket"
-#    icon = "fab fa-get-pocket"
-#    url = "https://getpocket.com/edit?url=%s"
-#
-#  [[params.sharingOptions]]
-#    name = "Hacker News"
-#    icon = "fab fa-hacker-news"
-#    url = "https://news.ycombinator.com/submitlink?u=%s"
 
   # -------------------
   # Integrated services
@@ -303,10 +197,3 @@ canonifyurls = true
     class = ""
     icon = ""
     url = "/about"
-
-  # --------------------
-  # Footer configuration
-  # --------------------
-  # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
-  #  [params.footer]
-  #    copyright = "<a href=\"https://github.com/errolseo\">Errol Seo</a>"
