@@ -16,8 +16,8 @@ canonifyurls = true
   posts = "/:year/:month/:slug/"
 
 [taxonomies]
-  tag = "tags"
   category = "categories"
+  tag = "tags"
   archive = "archives"
 
 # ------
@@ -169,20 +169,6 @@ canonifyurls = true
     icon = "fab fa-linkedin"
     url = "https://www.linkedin.com/sharing/share-offsite/?url=%s"
 
-  # -------------------
-  # Integrated services
-  # -------------------
-  # Gravatar
-  #  >> See Author section
-  #    [author]
-  #      gravatarEmail =
-  # Google Analytics
-  #  >> See googleAnalytics
-  #    googleAnalytics =
-  # Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Separate ids with comma. e.g : 9830047,1003342
-  #  fbAdminIds =
-  # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307
-  #  fbAppId =
 
   # --------------------
   # Header configuration

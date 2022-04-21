@@ -21,21 +21,23 @@
               {{ partial "post/gallery.html" . }}
             </div>
           </div>
-          <div id="post-footer" class="post-footer main-content-wrap">
-            {{ if (not (eq .Params.showTags false)) }}
-              {{ with .Params.tags }}
-                {{ $tagsLength := len . }}
-                {{ if gt $tagsLength 0 }}
-                  <div class="post-footer-tags">
-                    <span class="text-color-light text-small">{{ i18n "post.tagged_in" }}</span><br/>
-                    {{ partial "post/tag.html" $ }}
-                  </div>
+          {{ if (not (eq .Params.showFoot false)) }}
+            <div id="post-footer" class="post-footer main-content-wrap">
+              {{ if (not (eq .Params.showTags false)) }}
+                {{ with .Params.tags }}
+                  {{ $tagsLength := len . }}
+                  {{ if gt $tagsLength 0 }}
+                    <div class="post-footer-tags">
+                      <span class="text-color-light text-small">{{ i18n "post.tagged_in" }}</span><br/>
+                      {{ partial "post/tag.html" $ }}
+                    </div>
+                  {{ end }}
                 {{ end }}
               {{ end }}
-            {{ end }}
-            {{ partial "post/actions.html" . }}
-            {{ partial "post/comment.html" . }}
-          </div>
+              {{ partial "post/actions.html" . }}
+              {{ partial "post/comment.html" . }}
+            </div>
+          {{ end }}
         </article>
         {{ partial "footer.html" . }}
       </div>
