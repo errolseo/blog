@@ -23,15 +23,13 @@
           </div>
           {{ if (not (eq .Params.showFoot false)) }}
             <div id="post-footer" class="post-footer main-content-wrap">
-              {{ if (not (eq .Params.showTags false)) }}
-                {{ with .Params.tags }}
-                  {{ $tagsLength := len . }}
-                  {{ if gt $tagsLength 0 }}
-                    <div class="post-footer-tags">
-                      <span class="text-color-light text-small">{{ i18n "post.tagged_in" }}</span><br/>
-                      {{ partial "post/tag.html" $ }}
-                    </div>
-                  {{ end }}
+              {{ with .Params.tags }}
+                {{ $tagsLength := len . }}
+                {{ if gt $tagsLength 0 }}
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">{{ i18n "post.tagged_in" }}</span><br/>
+                    {{ partial "post/tag.html" $ }}
+                  </div>
                 {{ end }}
               {{ end }}
               {{ partial "post/actions.html" . }}
@@ -41,9 +39,11 @@
         </article>
         {{ partial "footer.html" . }}
       </div>
+      {{ if (not (eq .Params.showFoot false)) }}
       <div id="bottom-bar" class="post-bottom-bar" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}">
         {{ partial "post/actions.html" . }}
       </div>
       {{ partial "post/share-options.html" . }}
+      {{ end }}
     </div>
 {{ partial "foot.html" . }}

@@ -1,6 +1,6 @@
 ---
 title: "About"
-date: 2022-02-22T00:00:00+09:00
+showMeta: false
 showFoot: false
 ---
 ## Experience

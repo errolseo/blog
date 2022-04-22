@@ -8,7 +8,6 @@ defaultContentLanguage = "en-us"
 title = "Errol's AI blog"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "Errol Seo"
-# googleAnalytics = "UA-123-45"
 paginate = 7
 canonifyurls = true
 

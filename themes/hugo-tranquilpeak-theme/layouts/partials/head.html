@@ -49,10 +49,13 @@
     <!--STYLES-->
     <link rel="stylesheet" href="{{ "css/style-loyunkkpfr6jm59ikgpceqrpmhg5pjii5proka4weekz8gg5wi77lqa26x.min.css" | absURL }}" />
     <!--STYLES END-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TXCGWW79C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    {{ if or .Params.googleAnalytics.async .Params.ga.async }}
-      {{ template "_internal/google_analytics_async.html" . }}
-    {{ else }}
-      {{ template "_internal/google_analytics.html" . }}
-    {{ end }}
+      gtag('config', 'G-7TXCGWW79C');
+    </script>
   </head>
