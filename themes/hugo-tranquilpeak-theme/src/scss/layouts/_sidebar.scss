@@ -148,22 +148,6 @@
             left: -#{map-get($sidebar, md-screen-width)};
             @include sidebar-md;
         }
-        // hide bio in sidebar when small sidebar is enabled
-        &[data-behavior="2"],
-        &[data-behavior="3"],
-        &[data-behavior="5"],
-        &[data-behavior="6"] {
-            .sidebar-profile-bio {
-                display: none;
-            }
-        }
-    }
-}
-
-// display author bio only on extra large screen
-@media #{$large-and-down} {
-    #sidebar .sidebar-profile-bio {
-        display: none;
     }
 }
 

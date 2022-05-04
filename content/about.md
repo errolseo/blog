@@ -3,6 +3,12 @@ title: "About"
 showMeta: false
 showFoot: false
 ---
+{{< image classes="fig-33 clear" src="/images/profile.jpg" >}}
+
+##### Errol Seo
+서 현빈 (28)
+
+
 ## Experience
 **Mergerity**  
 Machine learning research engineer  
