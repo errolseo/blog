@@ -25,10 +25,6 @@
         font-size:   map-get($font-size, small);
         font-weight: 400;
         color:       map-get($colors, light);
-
-        a {
-            color: map-get($colors, light);
-        }
     }
     .post-content {
         text-rendering: optimizelegibility;

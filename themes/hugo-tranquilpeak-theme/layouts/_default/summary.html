@@ -21,24 +21,8 @@
     {{ end }}
   {{ end }}
 {{ end }}
-{{ if or .Params.thumbnailimageposition .Site.Params.thumbnailimageposition }}
-  {{ .Scratch.Set "thumbnailImagePosition" (.Params.thumbnailimageposition | default .Site.Params.thumbnailimageposition) }}
-{{ else }}
-  {{ .Scratch.Set "thumbnailImagePosition" "bottom" }}
-{{ end }}
-<article class="postShorten postShorten--thumbnailimg-{{ .Scratch.Get "thumbnailImagePosition" }}">
+<article class="postShorten postShorten--thumbnailimg-right">
   <div class="postShorten-wrap">
-    {{ if and (.Scratch.Get "thumbnailImage") (eq (.Scratch.Get "thumbnailImagePosition") "top")}}
-      {{ with .Params.link }}
-        <a href="{{ . | absURL }}" aria-label="{{ if i18n "global.open_post" }}{{ i18n "global.open_post" }}: {{ .Title }}{{ end }}" target="_blank">
-      {{ else }}
-        <a href="{{ .Permalink }}" aria-label="{{ if i18n "global.open_post" }}{{ i18n "global.open_post" }}: {{ .Title }}{{ end }}">
-      {{ end }}
-        <div class="postShorten-thumbnailimg">
-          <img alt="" src="{{ .Scratch.Get "thumbnailImage" }}"/>
-        </div>
-      </a>
-    {{ end }}
     <div class="postShorten-header">
       <h1 class="postShorten-title">
       {{ with .Params.link }}
@@ -71,11 +55,9 @@
       </p>
     </div>
   </div>
-  {{ if and (.Scratch.Get "thumbnailImage") (ne (.Scratch.Get "thumbnailImagePosition") "top")}}
-    <a href="{{ .Permalink }}" aria-label="{{ if i18n "global.open_post" }}{{ i18n "global.open_post" }}: {{ .Title }}{{ end }}">
-      <div class="postShorten-thumbnailimg">
-        <img alt="" src="{{ .Scratch.Get "thumbnailImage" }}"/>
-      </div>
-    </a>
-  {{ end }}
+  <a href="{{ .Permalink }}" aria-label="{{ if i18n "global.open_post" }}{{ i18n "global.open_post" }}: {{ .Title }}{{ end }}">
+    <div class="postShorten-thumbnailimg">
+      <img alt="" src="{{ .Scratch.Get "thumbnailImage" }}"/>
+    </div>
+  </a>
 </article>

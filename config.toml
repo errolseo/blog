@@ -58,18 +58,12 @@ enableRobotsTXT = true
   url = "/categories"
 [[menu.main]]
   weight = 3
-  identifier = "tags"
-  name = "Tags"
-  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-tags\" aria-hidden=\"true\"></i>"
-  url = "/tags"
-[[menu.main]]
-  weight = 4
   identifier = "archives"
   name = "Archives"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-folder-open\" aria-hidden=\"true\"></i>"
   url = "/archives"
 [[menu.main]]
-  weight = 5
+  weight = 4
   identifier = "about"
   name = "About"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-user\" aria-hidden=\"true\"></i>"
@@ -139,7 +133,6 @@ enableRobotsTXT = true
 
   # Display thumbnail image of each post on index pages (false: disabled, true: enabled)
   thumbnailImage = true
-  thumbnailImagePosition = "right"
   autoThumbnailImage = true
 
   # Your favicon path, default is "/favicon.png"
