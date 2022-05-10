@@ -6,8 +6,8 @@ showFoot: false
 {{< image classes="fig-33 clear" src="/images/profile.jpg" >}}
 
 ##### Errol Seo
-서 현빈 (28)
-
+**서 현빈** (28)\
+errolseo816\@gmail.com
 
 ## Experience
 **Mergerity**  
