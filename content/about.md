@@ -5,8 +5,8 @@ showFoot: false
 ---
 {{< image classes="fig-33 clear" src="/images/profile.jpg" >}}
 
-##### Errol Seo
-**서 현빈** (28)\
+## Author
+**Errol Seo (서 현빈)**\
 errolseo816\@gmail.com
 
 ## Experience
