@@ -71,6 +71,12 @@ enableRobotsTXT = true
 
 [[menu.links]]
   weight = 1
+  identifier = "notion"
+  name = "Notion"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-neos\" aria-hidden=\"true\"></i>"
+  url = "https://errolseo.notion.site/Errol-s-notepad-a25d71eab4fe46098f6959c9f9f69cab"
+[[menu.links]]
+  weight = 2
   identifier = "github"
   name = "GitHub"
   pre = "<i class=\"sidebar-button-icon fab fa-lg fa-github\" aria-hidden=\"true\"></i>"
