@@ -116,7 +116,7 @@
   translation: "in"
 
 - id: "post.tagged_in"
-  translation: "TAGGED IN"
+  translation: "Tag"
 
 - id: "post.toc"
   translation: "Table of Contents"

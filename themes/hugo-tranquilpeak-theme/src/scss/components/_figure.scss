@@ -23,23 +23,21 @@
         height: auto;
     }
     &.fig-20 {
-        @extend .left;
         width: calc(20% - 4px);
     }
     &.fig-25 {
-        @extend .left;
         width: calc(25% - 4px);
     }
     &.fig-33 {
-        @extend .left;
         width: calc(33.3% - 4px);
     }
     &.fig-50 {
-        @extend .left;
         width: calc(50% - 4px);
     }
+    &.fig-60 {
+        width: calc(60% - 4px);
+    }
     &.fig-75 {
-        @extend .left;
         width: calc(75% - 4px);
     }
     &.fig-100 {

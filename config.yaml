@@ -1,0 +1,143 @@
+# Introduction
+baseURL: https://errolseo.github.io/
+languageCode: en-us
+title: Errol's AI blog
+
+# Build
+
+# Cascade
+
+# Content types
+
+# Deployment
+
+# Front matter
+
+# HTTP cache
+
+# Imaging
+
+# Languages
+defaultContentLanguage: en-us
+
+# Markup
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: monokailight
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 1
+
+# Media types
+
+# Menus
+menus:
+  main:
+    - weight: 1
+      name: Home
+      identifier: home
+      url: /
+      pre: <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+    - weight: 2
+      name: Categories
+      identifier: categories
+      url: /categories
+      pre: <i class="sidebar-button-icon fas fa-lg fa-list" aria-hidden="true"></i>
+    - weight: 3
+      name: Archives
+      identifier: archives
+      url: /archives
+      pre: <i class="sidebar-button-icon fas fa-lg fa-folder-open" aria-hidden="true"></i>
+
+  links:
+    - weight: 1
+      name: About
+      identifier: about
+      url: /about
+      pre: <i class="sidebar-button-icon fas fa-lg fa-user" aria-hidden="true"></i>
+    - weight: 2
+      name: GitHub
+      identifier: github
+      url: https://github.com/errolseo
+      pre: <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+
+# Minify
+
+# Modules
+
+# Output formats
+
+# Outputs
+
+# Page
+
+# Pagination
+pagination:
+  pagerSize: 5
+
+# Params
+params:
+  description: Errol's AI blog
+  clearReading: true
+  hierarchicalCategories: true
+  swapPaginator: true
+  sidebarBehavior: 2
+
+  # Customize link of author avatar in sidebar
+  #  [params.sidebar.profile]
+  #    url = "/#about"
+
+  coverImage: images/cover.jpg
+  imageGallery: true
+  thumbnailImage: true
+  autoThumbnailImage: true
+
+  # Your favicon path, default is "/favicon.png"
+  #  favicon = "/favicon.png"
+
+  header:
+    rightLink:
+      class: ""
+      icon: ""
+      url: /about
+
+  author:
+    name: Errol Seo
+    location: Republic of Korea
+    picture: images/profile.png
+
+# Permalinks
+permalinks:
+  posts: "/:year/:month/:slug/"
+
+# Privacy
+
+# Related content
+
+# Security
+
+# Segments
+
+# Server
+
+# Services
+
+# Sitemap
+
+# Taxonomies
+taxonomies:
+  category: categories
+  tag: tags
+  archive: archives
+
+# Ugly URLs
+
+# Others
+canonifyurls: true
+enableRobotsTXT: true
+theme: "hugo-tranquilpeak-theme"

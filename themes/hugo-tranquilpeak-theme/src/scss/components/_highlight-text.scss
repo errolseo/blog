@@ -1,6 +1,5 @@
 .highlight-text {
     display: inline;
-    padding: 3px;
 
     &.red {
         background-color:map-get($highlight-text-bg-colors, 'red');
@@ -24,7 +23,8 @@
         background-color:map-get($highlight-text-bg-colors, 'cyan');
     }
     &.primary {
-        background-color:map-get($highlight-text-bg-colors, 'primary');
+        background-color: transparent;
+        background-image: linear-gradient(to bottom, transparent 20%, map-get($highlight-text-bg-colors, 'primary') 80%);
     }
     &.success {
         background-color:map-get($highlight-text-bg-colors, 'success');

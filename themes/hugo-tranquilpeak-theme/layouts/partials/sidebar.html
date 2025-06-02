@@ -2,8 +2,8 @@
   <div class="sidebar-container">
     {{ with ($.Scratch.Get "authorPicture") }}
       <div class="sidebar-profile">
-        <!-- <img class="sidebar-profile-picture" src="{{ . }}" alt="{{ i18n "global.author_picture" }}" /> -->
-        <h4 class="sidebar-profile-name">{{ $.Site.Author.name }}</h4>
+        <img class="sidebar-profile-picture" src="{{ . }}" alt="{{ i18n "global.author_picture" }}" />
+        <h4 class="sidebar-profile-name">{{ $.Site.Params.Author.name }}</h4>
       </div>
     {{ end }}
     <ul class="sidebar-buttons">

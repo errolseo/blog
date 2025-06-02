@@ -1,28 +1,39 @@
 ---
-title: "About"
 showMeta: false
 showFoot: false
 ---
-{{< image classes="fig-33 clear" src="/images/profile.jpg" >}}
-
-## Author
-**Errol Seo (서 현빈)**\
+# Author
+###### 서 현빈 (Errol Seo)
 errolseo816\@gmail.com
 
-## Experience
-**Mergerity**  
-Machine learning research engineer  
-2021.09 - Present  
+### Experience
+###### Uracle
+2024.09 -
 \
-**Like A Local**  
-NLP & Recommended system  
-2021.03 - 2021.08  
-\
-**Samsung SDS**  
-Machine learning research engineer (NLP)  
-2019.01 - 2020.11
+Machine learning research engineer (NLP)
 
-## Education
-**SungKyunKwan Univ. (SKKU)**  
-B.S. in software  
+###### Teddysum
+2022.08 - 2024.08
+\
+Machine learning research engineer (NLP)
+
+###### Mergerity
+2021.09 - 2022.07
+\
+Machine learning research engineer (NLP & Vision)
+
+###### Like A Local
+2021.03 - 2021.08
+\
+NLP & Recommended system
+
+###### Samsung SDS
+2019.01 - 2020.11
+\
+Machine learning research engineer (NLP)
+
+### Education
+###### SungKyunKwan Univ.
 2012.03 - 2019.02
+\
+B.S. in Software

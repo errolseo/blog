@@ -46,35 +46,30 @@
       {{ end }}
     </ul>
   </nav>
-<ul class="post-actions post-action-share" >
-  {{ if (not (eq .Params.showSocial false)) }}
-    <li class="post-action hide-lg hide-md hide-sm">
-      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="{{ i18n "post.share" }}">
-        <i class="fa fa-share-alt" aria-hidden="true"></i>
-      </a>
-    </li>
-    {{ range .Site.Params.sharingOptions }}
-      <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="{{ printf .url $.Permalink }}" title="{{ replace (i18n "global.share_on") "%s" .name }}" aria-label="{{ replace (i18n "global.share_on") "%s" .name }}">
-          <i class="{{ .icon }}" aria-hidden="true"></i>
+  <ul class="post-actions post-action-share" >
+    {{ if (not (eq .Params.showSocial false)) }}
+      <li class="post-action hide-lg hide-md hide-sm">
+        <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="{{ i18n "post.share" }}">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
         </a>
       </li>
+      {{ range .Site.Params.sharingOptions }}
+        <li class="post-action hide-xs">
+          <a class="post-action-btn btn btn--default" target="new" href="{{ printf .url $.Permalink }}" title="{{ replace (i18n "global.share_on") "%s" .name }}" aria-label="{{ replace (i18n "global.share_on") "%s" .name }}">
+            <i class="{{ .icon }}" aria-hidden="true"></i>
+          </a>
+        </li>
+      {{ end }}
     {{ end }}
-  {{ end }}
-  <li class="post-action">
-    <a class="post-action-btn btn btn--default" href="#post-footer" aria-label="{{ i18n "post.comment" }}">
-      <i class="far fa-comment"></i>
-    </a>
-  </li>
-  <li class="post-action">
-    {{ if findRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" .Content }}
-      <a class="post-action-btn btn btn--default" href="#table-of-contents" aria-label="{{ i18n "post.toc" }}">
-      <i class="fa fa-list" aria-hidden="true"></i>
-    {{ else }}
+    <li class="post-action">
       <a class="post-action-btn btn btn--default" href="#main" aria-label="{{ i18n "post.back_to_top" }}">
-      <i class="fa fa-arrow-up" aria-hidden="true"></i>
-    {{ end }}
-    </a>
-  </li>
-</ul>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#post-footer" aria-label="{{ i18n "post.comment" }}">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  </ul>
 </div>

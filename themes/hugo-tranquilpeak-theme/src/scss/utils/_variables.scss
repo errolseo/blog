@@ -4,7 +4,6 @@
 // Font families
 
 $menlo:                     Menlo, Consolas, monospace;
-$merriweather-serif:        'Merriweather', serif;
 $noto-sans-kr-sans-serif:   'Noto Sans KR', sans-serif;
 $open-sans-sans-serif:      'Open Sans', sans-serif;
 
@@ -48,15 +47,15 @@ $font-size: (
 
 // Colors
 $colors: (
-    'success': #4dc657,
-    'danger':  #f5311d,
-    'primary': #349ef3,
-    'purple':  #cf6ae0,
-    'base':    $font-color-base,
+    'success':  #4dc657,
+    'danger':   #f5311d,
+    'primary':  #349ef3,
+    'purple':   #cf6ae0,
+    'base':     $font-color-base,
     'warning':  #f5aa0a,
-    'light':   #9eabb3,
+    'light':    #9eabb3,
      // use for tag `a`
-    'link':    #349ef3
+    'link':     #349ef3
 );
 
 // Z-indexes
@@ -245,7 +244,7 @@ $pagination-height: 60px;
 
 // Post thumbnail image
 // Width and height of post's thumbnail image
-$post-thumbnail-image-width: 140px;
+$post-thumbnail-image-width: 160px;
 $post-bottom-thumbnail-image-max-height: 250px;
 
 // Tooltip

@@ -4,6 +4,7 @@
     },
     "extends": "google",
     "rules": {
+        "linebreak-style": 0,
         "comma-dangle": [2,"never"],
         "valid-jsdoc": [2, {
             "requireReturnDescription": false,
