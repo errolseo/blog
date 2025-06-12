@@ -34,7 +34,7 @@
         line-height: 1.5em;
 
         a {
-            color: map-get($colors, light);
+            color: map-get($colors, primary);
         }
     }
     .postShorten-meta,
@@ -102,8 +102,8 @@
             img {
                 display:    block;
                 width:      $post-thumbnail-image-width;
-                height:     $post-thumbnail-image-width;
-                object-fit: cover;
+                height:     $post-thumbnail-image-height;
+                object-fit: contain;
                 overflow:   hidden;
                 // object-position:right;
             }

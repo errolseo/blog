@@ -134,7 +134,7 @@ $headings-font-size-md-screen-reduction-factor: 0.15rem;
 
 // Main
 $about: (
-    'background': rgba(17, 26, 35, 0),
+    'background': #323741,
 );
 
 // Header
@@ -150,7 +150,7 @@ $sidebar: (
     'md-screen-width':  75px,
     'lg-screen-width':  250px,
     'xlg-screen-width': 500px,
-    'background':       rgba(17, 26, 35, 0),
+    'background':       #323741,
     'color':            #ebebeb
 );
 
@@ -244,8 +244,8 @@ $pagination-height: 60px;
 
 // Post thumbnail image
 // Width and height of post's thumbnail image
-$post-thumbnail-image-width: 160px;
-$post-bottom-thumbnail-image-max-height: 250px;
+$post-thumbnail-image-width: 200px;
+$post-thumbnail-image-height: 160px;
 
 // Tooltip
 $tooltip: (

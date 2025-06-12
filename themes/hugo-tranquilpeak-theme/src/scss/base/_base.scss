@@ -133,7 +133,7 @@ pre > code {
     display:     block;
     width:       100%;
     box-sizing:  border-box;
-    padding:     15px;
+    padding:     25px 15px 10px;
     font-family: #{map-get($font-families, 'highlight')};
     border:      none;
     margin:      0;
