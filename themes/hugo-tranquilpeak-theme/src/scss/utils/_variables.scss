@@ -28,7 +28,7 @@ $font-families: (
 // equal to 15px
 $font-size-base:      1.6rem;
 $font-color-base:     #5d686f;
-$line-height-base:    1.9em;
+$line-height-base:    1.7em;
 $letter-spacing-base: 0.01em;
 
 // Reduction of font size base on small screen and down
@@ -142,7 +142,7 @@ $header:(
     'height':     55px,
     'background': #fff,
     'color':      #88909a,
-    'border':     1px solid #eef2f8
+    'border':     1px solid #e1e6eb
 );
 
 // Sidebar

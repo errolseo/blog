@@ -98,7 +98,7 @@ params:
   autoThumbnailImage: true
 
   # Your favicon path, default is "/favicon.png"
-  #  favicon = "/favicon.png"
+  favicon: images/favicon.png
 
   header:
     rightLink:
