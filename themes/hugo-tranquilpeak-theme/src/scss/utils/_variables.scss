@@ -3,31 +3,29 @@
 
 // Font families
 
-$menlo:                     Menlo, Consolas, monospace;
-$noto-sans-kr-sans-serif:   'Noto Sans KR', sans-serif;
-$open-sans-sans-serif:      'Open Sans', sans-serif;
+$hack:                      Hack, monospace;
+$noto-sans-kr-sans-serif:   'Noto Sans KR', 'Noto Color Emoji', sans-serif;
 
-$font-family-base: $open-sans-sans-serif;
+$font-family-base: $noto-sans-kr-sans-serif;
 
 $font-families: (
    // base
    'headings':          $noto-sans-kr-sans-serif,
    // components
-   'code':              $menlo,
+   'code':              $hack,
    'caption':           $noto-sans-kr-sans-serif,
    'image-gallery':     $noto-sans-kr-sans-serif,
    'post-header-cover': $noto-sans-kr-sans-serif,
-   'post-meta':         $open-sans-sans-serif,
+   'post-meta':         $noto-sans-kr-sans-serif,
    'post-content':      $noto-sans-kr-sans-serif,
-   'post-excerpt-link': $open-sans-sans-serif,
-   'highlight':         $menlo,
+   'post-excerpt-link': $noto-sans-kr-sans-serif,
    // layout
-   'sidebar':           $open-sans-sans-serif
+   'sidebar':           $noto-sans-kr-sans-serif
 );
 
 // equal to 15px
 $font-size-base:      1.6rem;
-$font-color-base:     #5d686f;
+$font-color-base:     #383838;
 $line-height-base:    1.7em;
 $letter-spacing-base: 0.01em;
 
@@ -230,9 +228,9 @@ $markdown-headings-font-size: (
     'h1': 3rem,
     'h2': 2.7rem,
     'h3': 2.4rem,
-    'h4': 2.1rem,
-    'h5': 1.9rem,
-    'h6': 1.7rem
+    'h4': 2.2rem,
+    'h5': 1.8rem,
+    'h6': 1.6rem
 );
 // Reduction of markdwon headings on small screen and down
 $markdown-headings-font-size-sm-screen-reduction-factor: 0.35rem;

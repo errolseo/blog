@@ -53,7 +53,6 @@
         }
     }
     .post-footer {
-        margin-top: 20px;
         &-tags {
             padding-bottom: 10px;
             margin-bottom:  10px;
@@ -139,6 +138,6 @@
 // Increase font-size on medium and large screen
 @media #{$medium-and-up} {
     .post-content {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
 }

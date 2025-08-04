@@ -18,8 +18,7 @@
     'utils/mixins/tag';
 
 @import
-    'base/base',
-    'base/custom';
+    'base/base';
 
 @import
     'layouts/blog',
@@ -65,5 +64,4 @@
     'pages/search';
 
 @import
-    'themes/hljs-tranquilpeak',
-    'themes/hljs-custom';
+    'themes/hljs-tranquilpeak';

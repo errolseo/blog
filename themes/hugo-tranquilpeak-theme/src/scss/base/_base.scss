@@ -40,22 +40,22 @@ h6 {
     font-family:    map-get($font-families, 'headings');
     font-weight:    700;
     line-height:    1.45em;
-    color:          #4a4a4a;
+    color:         #222;
 }
 
 h1,
 h2,
 h3 {
-    margin: 1em 0 1em 0;
+    margin: 0.8em 0 0.8em 0;
 }
 
 h4,
 h5 {
-    margin: 1em 0 0.5em 0;
+    margin: 0.8em 0 0.4em 0;
 }
 
 h6 {
-    margin: 1em 0 0 0;
+    margin: 0.8em 0 0 0;
 }
 
 // List each header with his font size
