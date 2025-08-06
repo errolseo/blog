@@ -26,7 +26,7 @@ Machine learning research engineer (NLP & Vision)
 NLP & Recommendation system
 
 ##### Samsung SDS
-2019.01 - 2021.02<br>
+2019.01 - 2020.12<br>
 Machine learning research engineer (NLP)
 
 ---
