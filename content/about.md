@@ -11,7 +11,7 @@ errolseo816\@gmail.com
 ### Experience
 ##### Uracle
 2024.09 - <br>
-Machine learning research engineer (NLP)
+Machine learning research engineer (NLP & Document Intelligence)
 
 ##### Teddysum
 2022.08 - 2024.08<br>

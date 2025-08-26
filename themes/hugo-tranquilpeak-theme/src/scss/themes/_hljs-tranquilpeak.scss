@@ -12,13 +12,7 @@ pre > code.codeblock {
 
 // Default inline code
 code {
-    background-color: map-get($highlight, 'background');
-}
-
-// Tabbed code block tab
-.codeblock--tabbed figcaption .tab.active {
-    background: map-get($colors, 'primary');
-    color:      white;
+    background-color: #f0f0f0;
 }
 
 // Highlight code block
