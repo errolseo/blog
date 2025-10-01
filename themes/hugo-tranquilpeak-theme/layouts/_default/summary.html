@@ -1,25 +1,5 @@
-{{ if .Site.Params.thumbnailImage }}
-  {{ if .Params.thumbnailimage }}
-    {{ .Scratch.Set "thumbnailImage" (.Params.thumbnailimage | absURL) }}
-  {{ else }}
-    {{ if or .Params.autothumbnailimage (and .Site.Params.autoThumbnailImage (ne .Params.autothumbnailimage false)) }}
-      {{ if .Params.gallery }}
-        {{ range first 1 .Params.gallery }}
-          {{ range first 1 (split . " ") }}
-            {{ $.Scratch.Set "thumbnailImage" (. | absURL) }}
-          {{ end }}
-        {{ end }}
-      {{ else }}
-        {{ if .Params.coverImage }}
-          {{ if (findRE "^/" .Params.coverImage 1) }}
-            {{ .Scratch.Set "thumbnailImage" (.Params.coverImage | absURL) }}
-          {{ else }}
-            {{ .Scratch.Set "thumbnailImage" (path.Join .RelPermalink .Params.coverImage) }}
-          {{ end }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
+{{ if .Params.thumbnailimage }}
+  {{ .Scratch.Set "thumbnailImage" (.Params.thumbnailimage | absURL) }}
 {{ end }}
 <article class="postShorten postShorten--thumbnailimg-right">
   <div class="postShorten-wrap">

@@ -3,18 +3,8 @@
     <div id="blog">
       {{ partial "header.html" . }}
       {{ partial "sidebar.html" . }}
-      {{ partial "post/header-cover.html" . }}
-      <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
-        class="{{ with .Params.coverimage }}hasCover{{ end }}
-               {{ if eq .Params.covermeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
-               {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
+<div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}">
         <article class="post" id="top">
-          {{ with .Params.covercaption }}
-            <span class="post-header-cover-caption caption">{{ . | markdownify }}</span>
-          {{ end }}
-          {{ if or (not .Params.coverimage) (eq .Params.covermeta "out") }}
-            {{ partial "post/header.html" . }}
-          {{ end }}
           <div class="post-content markdown">
             <div class="main-content-wrap">
               {{ .Content }}

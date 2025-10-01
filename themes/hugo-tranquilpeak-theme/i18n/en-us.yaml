@@ -8,12 +8,6 @@
 - id: "global.category"
   translation: "Category"
 
-- id: "global.tags"
-  translation: "Tags"
-
-- id: "global.tag"
-  translation: "Tag"
-
 - id: "global.archives"
   translation: "Archives"
 
@@ -37,9 +31,6 @@
 
 - id: "global.search_category"
   translation: "Search category"
-
-- id: "global.search_tag"
-  translation: "Search tag"
 
 - id: "global.search_date"
   translation: "Search date (YYYY/MM/DD)"
@@ -79,16 +70,6 @@
 - id: "global.categories_found.other"
   translation: "{n} categories found"
 
-## GLOBAL.TAGS_FOUND ##
-- id: "global.tags_found.zero"
-  translation: "no tag found"
-
-- id: "global.tags_found.one"
-  translation: "1 tag found"
-
-- id: "global.tags_found.other"
-  translation: "{n} tags found"
-
 ## PAGINATION ##
 - id: "pagination.page"
   translation: "page {{ .Paginator.PageNumber }}"
@@ -96,14 +77,8 @@
 - id: "pagination.of"
   translation: "of {{ .Paginator.TotalPages }}"
 
-- id: "pagination.newer_posts"
-  translation: "NEWER POSTS"
-
-- id: "pagination.older_posts"
-  translation: "OLDER POSTS"
-
 - id: "pagination.previous"
-  translation: "PREVIOUS"
+  translation: "PREV"
 
 - id: "pagination.next"
   translation: "NEXT"
@@ -114,12 +89,6 @@
 
 - id: "post.categorized_in"
   translation: "in"
-
-- id: "post.tagged_in"
-  translation: "Tag"
-
-- id: "post.toc"
-  translation: "Table of Contents"
 
 - id: "post.read_more"
   translation: "Continue reading"
@@ -152,7 +121,7 @@
 
 ## FOOTER ##
 - id: "footer.all_rights_reserved"
-  translation: "All Rights Reserved"
+  translation: "All rights reserved"
 
 ## DATE ##
 - id: "date.month.january"

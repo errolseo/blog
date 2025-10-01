@@ -1,6 +1,7 @@
 ---
 showMeta: false
 showFoot: false
+summary: Resume
 ---
 # Author
 #### 서 현빈 (Errol Seo) &nbsp;&nbsp;🐢
@@ -35,6 +36,3 @@ Machine learning research engineer (NLP)
 ##### SungKyunKwan Univ.
 2012.03 - 2019.02<br>
 B.S. in Software
-<br>
-<br>
-<br>

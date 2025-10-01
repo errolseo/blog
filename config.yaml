@@ -28,10 +28,6 @@ markup:
       unsafe: true
   highlight:
     style: monokailight
-  tableOfContents:
-    endLevel: 3
-    ordered: false
-    startLevel: 1
 
 # Media types
 
@@ -84,7 +80,7 @@ pagination:
 params:
   description: Errol's AI blog
   clearReading: true
-  hierarchicalCategories: true
+  hierarchicalCategories: false
   swapPaginator: true
   sidebarBehavior: 2
 
@@ -92,10 +88,8 @@ params:
   #  [params.sidebar.profile]
   #    url = "/#about"
 
-  coverImage: images/cover.jpg
   imageGallery: true
   thumbnailImage: true
-  autoThumbnailImage: true
 
   # Your favicon path, default is "/favicon.png"
   favicon: images/favicon.png
@@ -132,7 +126,6 @@ permalinks:
 # Taxonomies
 taxonomies:
   category: categories
-  tag: tags
   archive: archives
 
 # Ugly URLs
