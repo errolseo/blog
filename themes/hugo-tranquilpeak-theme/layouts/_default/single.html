@@ -3,8 +3,9 @@
     <div id="blog">
       {{ partial "header.html" . }}
       {{ partial "sidebar.html" . }}
-<div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}">
+      <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}">
         <article class="post" id="top">
+          {{ partial "post/header.html" . }}
           <div class="post-content markdown">
             <div class="main-content-wrap">
               {{ .Content }}
@@ -13,15 +14,6 @@
           </div>
           {{ if (not (eq .Params.showFoot false)) }}
             <div id="post-footer" class="post-footer main-content-wrap">
-              {{ with .Params.tags }}
-                {{ $tagsLength := len . }}
-                {{ if gt $tagsLength 0 }}
-                  <div class="post-footer-tags">
-                    <span class="text-color-light text-small">{{ i18n "post.tagged_in" }}</span><br/>
-                    {{ partial "post/tag.html" $ }}
-                  </div>
-                {{ end }}
-              {{ end }}
               {{ partial "post/comment.html" . }}
               {{ partial "post/actions.html" . }}
             </div>
@@ -30,10 +22,11 @@
         {{ partial "footer.html" . }}
       </div>
       {{ if (not (eq .Params.showFoot false)) }}
-      <div id="bottom-bar" class="post-bottom-bar" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}">
-        {{ partial "post/actions.html" . }}
-      </div>
-      {{ partial "post/share-options.html" . }}
+        <div id="bottom-bar" class="post-bottom-bar" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}">
+          {{ partial "post/actions.html" . }}
+        </div>
       {{ end }}
     </div>
-{{ partial "foot.html" . }}
+    {{ partial "script.html" . }}
+  </body>
+</html>
