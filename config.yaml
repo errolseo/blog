@@ -103,7 +103,7 @@ params:
   author:
     name: Errol Seo
     location: Republic of Korea
-    picture: images/profile.png
+    picture: images/profile.webp
 
 # Permalinks
 permalinks:
