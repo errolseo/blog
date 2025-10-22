@@ -4,7 +4,7 @@ showFoot: false
 summary: Resume
 ---
 # Author
-#### 서 현빈 (Errol Seo) &nbsp;&nbsp;🐢
+#### 서 현빈 (Errol Seo) &nbsp; <img style="display: inline; vertical-align: sub;" src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f422/512.webp" alt="🐢" width="30" height="30">
 errolseo816\@gmail.com
 
 ---
