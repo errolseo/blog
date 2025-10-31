@@ -8,6 +8,9 @@ def trim_whitespace(image):
     :param image: Pillow Image 객체
     :return: 여백이 제거된 Pillow Image 객체
     """
+    # 이미지를 RGBA 모드로 일관되게 변환하여 알파 채널을 보장합니다.
+    image = image.convert("RGBA")
+    
     # 이미지를 RGB 모드로 변환 (getbbox가 RGB/L 모드에서 작동)
     bg = Image.new("RGB", image.size, (255, 255, 255))
     bg.paste(image, mask=image.split()[3])  # 투명 배경을 흰색으로 채움
@@ -57,7 +60,7 @@ def convert_images_to_webp_recursive(root_dir, quality=90, delete_original=False
 
 
 if __name__ == "__main__":
-    target_directory = "static/images"
+    target_directory = "static/images/NLP/4"
     
     # ⚠️ 주의: delete_original=True로 설정하면 원본 파일이 삭제되니, 먼저 백업 후 테스트하세요.
     convert_images_to_webp_recursive(target_directory, quality=90, delete_original=False)

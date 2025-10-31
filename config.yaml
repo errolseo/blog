@@ -28,6 +28,10 @@ markup:
       unsafe: true
   highlight:
     style: monokailight
+  tableOfContents:
+    startLevel: 1
+    endLevel: 3
+    ordered: false
 
 # Media types
 

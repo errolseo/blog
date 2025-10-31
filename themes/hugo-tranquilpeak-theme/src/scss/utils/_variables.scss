@@ -226,11 +226,11 @@ $main-content: (
 // font-size : (X.Xrem = XXpx, 1.0rem = 10px)
 $markdown-headings-font-size: (
     'h1': 3rem,
-    'h2': 2.7rem,
-    'h3': 2.4rem,
-    'h4': 2.2rem,
-    'h5': 1.8rem,
-    'h6': 1.6rem
+    'h2': 2.5rem,
+    'h3': 2.1rem,
+    'h4': 1.8rem,
+    'h5': 1.6rem,
+    'h6': 1.4rem
 );
 // Reduction of markdwon headings on small screen and down
 $markdown-headings-font-size-sm-screen-reduction-factor: 0.35rem;

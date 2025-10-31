@@ -9,6 +9,16 @@ html {
     // Overrides the highlight color shown when the user taps
     //a link or a JavaScript clickable element in Safari on iPhone
     @include prefix(tap-highlight-color, rgba(0, 0, 0, 0), 'webkit');
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #323741;
+    }
+    &::-webkit-scrollbar-track {
+        background: #fff;
+    }
 }
 
 body {
@@ -30,36 +40,13 @@ body {
     }
 }
 
-html, body {
-    &::-webkit-scrollbar {
-        width: 10px;
-    }
-    &::-webkit-scrollbar-thumb {
-        background: #323741;
-    }
-    &::-webkit-scrollbar-track {
-        background: #fff;
-    }
-}
-
 h1, h2, h3, h4, h5, h6 {
+    margin: 0.6em 0 0.6em 0;
     letter-spacing: -0.04em;
     font-family: map-get($font-families, 'headings');
     font-weight: 700;
     line-height: 1.45em;
     color: #222;
-}
-
-h1, h2, h3 {
-    margin: 0.8em 0 0.8em 0;
-}
-
-h4, h5 {
-    margin: 0.8em 0 0.4em 0;
-}
-
-h6 {
-    margin: 0.8em 0 0 0;
 }
 
 // List each header with his font size
@@ -70,13 +57,13 @@ h6 {
 }
 
 p {
-    margin: 0 0 1.5em 0;
+    margin: 0 0 1.2em 0;
 }
 
 ul,
 ol,
 dl {
-    margin: 0 0 0.5em 0;
+    margin: .6em 0;
     padding-inline-start: 30px;
 }
 
@@ -119,7 +106,7 @@ table {
 }
 
 hr {
-    margin: 1.5em 0 0;
+    margin: 1.2em 0 0;
     outline: none;
     border: none;
     border-top: 1px solid #e1e6eb;
