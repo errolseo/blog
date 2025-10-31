@@ -35,6 +35,8 @@ def convert_images_to_webp_recursive(root_dir, quality=90, delete_original=False
     
     for dirpath, _, filenames in os.walk(root_dir):
         for filename in filenames:
+            if filename == "favicon.png":
+                continue
             name, extension = os.path.splitext(filename)
             if extension.lower() in image_extensions:
                 original_path = os.path.join(dirpath, filename)
