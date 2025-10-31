@@ -60,7 +60,7 @@ def convert_images_to_webp_recursive(root_dir, quality=90, delete_original=False
 
 
 if __name__ == "__main__":
-    target_directory = "static/images/NLP/4"
+    target_directory = "static/images"
     
     # ⚠️ 주의: delete_original=True로 설정하면 원본 파일이 삭제되니, 먼저 백업 후 테스트하세요.
     convert_images_to_webp_recursive(target_directory, quality=90, delete_original=False)
